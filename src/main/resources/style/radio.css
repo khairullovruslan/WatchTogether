@@ -1,0 +1,13 @@
+.radio-button {
+    -fx-background-color: transparent;
+}
+
+.radio-button .radio {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-padding: 5;
+    -fx-background-radius: 0;
+}
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.TextFlow?>
+<BorderPane fx:id="borderMediaPane" style="-fx-background-color: black" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.khairullovruslan.watchtogether.controllers.view.VideoPlayerView">
+    <top>
+        <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+            <Label fx:id="videoTitleLabel" text="Название видео" style="-fx-font-size: 20; -fx-text-fill: white;"/>
+        </HBox>
+    </top>
+    <center>
+        <StackPane fx:id="mediaStackPane">
+            <AnchorPane fx:id="closePane">
+
+                <ImageView fx:id="exitView" fitHeight="32" fitWidth="32" style="-fx-padding: 10;"
+                           AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
+                </ImageView>
+
+            </AnchorPane>
+            <ImageView fx:id="loadingGifView" fitHeight="600" fitWidth="800"
+                       style="-fx-preserve-ratio: true; -fx-alignment: center;"
+                       AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0"
+            />
+
+
+            <MediaView fx:id="mediaView" style="-fx-background-color: transparent;"/>
+
+            <VBox fx:id="videoControlHBox" alignment="BOTTOM_CENTER" spacing="10" style="-fx-padding: 10;">
+
+                <Slider fx:id="slider" style="-fx-padding: 0 20 0 20;"/>
+
+                <HBox spacing="20" alignment="CENTER_LEFT" style="-fx-padding: 0 20 10 20;">
+                    <ImageView fx:id="playImageView" fitHeight="25" fitWidth="25"/>
+                    <ImageView fx:id="volumeView" fitHeight="25" fitWidth="25"/>
+                    <Rectangle fx:id="hitArea" width="32" height="32" fill="transparent"/>
+                    <Slider fx:id="volumeSlider" style="-fx-padding: 0 5 0 5;"/>
+
+
+                    <Label fx:id="currentTimeLabel" text="00:00 / 00:00"/>
+                    <ImageView fx:id="shareImageView" fitHeight="30" fitWidth="27"/>
+                    <ImageView fx:id="chatImageView" fitHeight="30" fitWidth="50"/>
+                    <ImageView fx:id="fullScreenView" fitHeight="30" fitWidth="30"/>
+
+                </HBox>
+            </VBox>
+            <VBox visible="false" fx:id="participantsVBox" maxWidth="350" spacing="10" style="-fx-padding: 10;">
+
+                <Label fx:id="participantsLabel" text="Участники"
+                       style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white; "/>
+                <ComboBox maxWidth="350" fx:id="participantsComboBox"/>
+
+                <Label fx:id="chatLabel" text="Чат"
+                       style="-fx-font-size: 16; -fx-font-weight: bold; -fx-padding: 10 0 0 0; -fx-text-fill: white;"/>
+
+
+                <ScrollPane VBox.vgrow="ALWAYS" fx:id="chatScrollPane" fitToWidth="true" fitToHeight="true"
+                            style="-fx-background-color: #18171b;">
+                    <TextFlow fx:id="chatTextFlow">
+                    </TextFlow>
+                </ScrollPane>
+
+
+                <TextField fx:id="chatInputField" promptText="Введите ваше сообщение..."
+                           style="-fx-border-color: lightgray;"/>
+            </VBox>
+
+            <Label fx:id="volumeLabel" text="100" style="-fx-font-size: 36; -fx-text-fill: white; -fx-opacity: 0;"
+                   StackPane.alignment="CENTER" />
+
+        </StackPane>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.khairullovruslan.watchtogether.controllers.view.PreWatchView">
+
+    <VBox spacing="20" alignment="CENTER" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0"
+          AnchorPane.bottomAnchor="0">
+
+        <Label fx:id="createRoomLabel" alignment="CENTER" cache="true" cacheHint="SCALE" text="создать комнату"
+               textAlignment="CENTER"
+               textFill="WHITE">
+        </Label>
+
+        <Label fx:id="addedByCodeLabel" accessibleRole="BUTTON"
+               text="присоединиться по коду" textFill="#970000">
+        </Label>
+
+    </VBox>
+    <Label fx:id="backLabel"
+           AnchorPane.leftAnchor="10" AnchorPane.bottomAnchor="10">
+    </Label>
+    <ImageView fx:id="settingImageView" fitHeight="100" fitWidth="100"
+               AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+    </ImageView>
+
+</AnchorPane>
+

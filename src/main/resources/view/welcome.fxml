@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.khairullovruslan.watchtogether.controllers.WelcomeController">
+    <VBox spacing="20" alignment="CENTER" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0"
+          AnchorPane.bottomAnchor="0">
+
+        <Label fx:id="welcomeLabel" alignment="CENTER" cache="true" cacheHint="SCALE" text="watch together" textAlignment="CENTER"
+               textFill="WHITE">
+            <font>
+                <Font name="VirgilCustom" size="130.0"/>
+            </font>
+        </Label>
+
+        <Label fx:id="startGameLabel" styleClass="label-start" accessibleRole="BUTTON"
+               text="START WATCH" textFill="#970000">
+            <font>
+                <Font name="Chalkboard" size="48.0"/>
+            </font>
+        </Label>
+
+    </VBox>
+</AnchorPane>

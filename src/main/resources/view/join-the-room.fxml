@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.khairullovruslan.watchtogether.controllers.view.JoinRoomView">
+
+    <VBox spacing="10" alignment="CENTER" AnchorPane.topAnchor="10" AnchorPane.rightAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0">
+
+        <Label fx:id="enterCodeLabel" text="Введите код" textAlignment="CENTER" textFill="#a71400"/>
+
+        <TextField fx:id="codeField" maxWidth="1000"
+                   style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-bottom-color: #a71400; -fx-border-width: 0 0 1 0;"/>
+        <Label fx:id="enterPasswordLabel" text="Введите пароль" textAlignment="CENTER" textFill="#a71400"/>
+        <TextField fx:id="passwordField" maxWidth="1000"
+                   style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-bottom-color: #a71400; -fx-border-width: 0 0 1 0;"/>
+
+        <Label fx:id="enterNameLabel" text="Введите имя" textAlignment="CENTER" textFill="#a71400"/>
+        <TextField fx:id="nameField" maxWidth="1000"
+                   style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-bottom-color: #a71400; -fx-border-width: 0 0 1 0;"/>
+
+
+        <Label fx:id="errorLabel" visible="false" textAlignment="CENTER" textFill="#a71400"/>
+
+        <HBox AnchorPane.topAnchor="120" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+              alignment="CENTER">
+            <Label fx:id="joinRoomLabel" accessibleRole="BUTTON"
+                   text="начать" textFill="#970000"/>
+
+            <ImageView fx:id="insertView" fitHeight="30" fitWidth="30"/>
+        </HBox>
+
+
+    </VBox>
+
+    <ImageView fx:id="settingImageView" fitHeight="100" fitWidth="100"
+               AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+    </ImageView>
+    <Label fx:id="backLabel"
+           AnchorPane.leftAnchor="10" AnchorPane.bottomAnchor="10">
+    </Label>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.itis.khairullovruslan.watchtogether.controllers.view.SettingView">
+
+    <Label fx:id="welcomeLabel" text="Настройки" alignment="CENTER"
+           AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="10">
+    </Label>
+
+    <HBox spacing="20" alignment="CENTER"
+          AnchorPane.topAnchor="50" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0"
+          AnchorPane.bottomAnchor="0">
+
+        <RadioButton fx:id="englishRadioButton" text="English"/>
+        <RadioButton fx:id="russianRadioButton" text="Русский"/>
+
+    </HBox>
+
+    <Label fx:id="backLabel" AnchorPane.leftAnchor="10" AnchorPane.bottomAnchor="10">
+    </Label>
+
+</AnchorPane>

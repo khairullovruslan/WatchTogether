@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Main-Class: ru.itis.khairullovruslan.watchtogether.WatchTogetherApplication
+Class-Path: javafx-controls-21.jar audio-4.0.17.jar util-4.0.17.jar jack
+ son-databind-2.14.2.jar kotlin-stdlib-common-1.8.10.jar javafx-fxml-21.
+ jar fxgl-gameplay-17.3.jar fxgl-17.3.jar storage-4.0.17.jar fxgl-core-1
+ 7.3.jar javafx-media-21-mac-aarch64.jar jackson-annotations-2.14.2.jar 
+ javafx-graphics-21.jar lifecycle-4.0.17.jar javafx-base-21-mac-aarch64.
+ jar jackson-core-2.14.2.jar fxgl-scene-17.3.jar annotations-13.0.jar ja
+ vafx-controls-21-mac-aarch64.jar javafx-base-21.jar javafx-graphics-21-
+ mac-aarch64.jar javafx-fxml-21-mac-aarch64.jar javafx-media-21.jar fxgl
+ -io-17.3.jar fxgl-entity-17.3.jar kotlin-stdlib-1.8.10.jar
+
